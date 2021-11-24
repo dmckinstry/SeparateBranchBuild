@@ -1,8 +1,0 @@
-on:
-  workflow_dispatch:
-  push:
-    branches: [ adf_publish ]
-
-jobs:
-  trigger-adf-promotions:
-    uses: dmckinstry/SeparateBranchBuild/.github/workflows/deploy-from-main.yml@main

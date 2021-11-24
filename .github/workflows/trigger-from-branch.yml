@@ -1,0 +1,12 @@
+# This file will trigger the workflows based on pushes to the branch
+# It doesn't really need to exist in main but I recommend it so that you can 
+# use workflow_dispatch for manual runs.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ adf_publish ]
+
+jobs:
+  trigger-adf-promotions:
+    uses: dmckinstry/SeparateBranchBuild/.github/workflows/deploy-from-main.yml@main
