@@ -1,0 +1,12 @@
+name: Promote ADF Branch
+on:
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  deploy-to-dev:
+    runs-on: ubuntu-latest
+    steps:
+#       - uses: actions/checkout@v2
+      - name: Run a one-line script
+        run: echo Hello from main branch
