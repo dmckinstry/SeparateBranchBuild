@@ -1,9 +1,9 @@
-
 on:
   workflow_dispatch:
   push:
     branches: [ adf_publish ]
 
 jobs:
-  build:
-    uses: dmckinstry/SeparateBuildBranch/.github/workflows/deploy-from-main.yml@main
+  promote:
+    name: Promote branch changes to environments
+    uses: dmckinstry/SeparateBranchBuild/.github/workflows/deploy-from-main.yml@main
