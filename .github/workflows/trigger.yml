@@ -1,4 +1,3 @@
-name: Trigger deployments
 
 on:
   workflow_dispatch:
