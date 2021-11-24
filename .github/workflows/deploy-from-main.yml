@@ -7,8 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # We need to explicitly checkout the publish branch
-      - uses: actions/checkout@v2
-        branch: adf_publish
+      
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+        with:
+          ref: adf_publish
+      #     path: # optional
 
       - name: Publish to Dev
         run: |
