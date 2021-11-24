@@ -5,5 +5,4 @@ on:
 
 jobs:
   promote:
-    name: Promote branch changes to environments
     uses: dmckinstry/SeparateBranchBuild/.github/workflows/deploy-from-main.yml@main
