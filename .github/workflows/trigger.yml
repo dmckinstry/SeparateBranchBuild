@@ -7,10 +7,4 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Run a one-line script
-        run: | 
-          ls
-          echo Hello from trigger
+    uses: dmckinstry/SeparateBuildBranch/.github/workflows/deploy-from-main.yml@main
