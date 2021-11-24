@@ -4,5 +4,5 @@ on:
     branches: [ adf_publish ]
 
 jobs:
-  promote:
+  trigger-adf-promotions:
     uses: dmckinstry/SeparateBranchBuild/.github/workflows/deploy-from-main.yml@main
